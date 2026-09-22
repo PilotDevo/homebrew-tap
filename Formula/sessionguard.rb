@@ -1,23 +1,23 @@
 class Sessionguard < Formula
   desc "System-level daemon that keeps AI coding sessions intact when projects move"
   homepage "https://github.com/PilotDevo/sessionguard"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/PilotDevo/sessionguard/releases/download/v#{version}/sessionguard-aarch64-apple-darwin.tar.gz"
-      sha256 "372a3c9e281169acf094bf55e762388d06962fa8317749b437ade3b73c3722e4"
+      sha256 "503da284fe98ec036db965ea377b93becc15b980e8cdcff9b0e06a376d55fb3e"
     end
     on_intel do
       url "https://github.com/PilotDevo/sessionguard/releases/download/v#{version}/sessionguard-x86_64-apple-darwin.tar.gz"
-      sha256 "514646eed70ac9f25d18d63dd7d765c0dfc6b21c7a4e711af116906bee082dba"
+      sha256 "bf162bb14d7b2614d2a34d13ee54ff6b22898b31acde4f6a0fc97c34512812fd"
     end
   end
 
   on_linux do
     url "https://github.com/PilotDevo/sessionguard/releases/download/v#{version}/sessionguard-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "a2c40a6b24500d80526c7117e5f2539cbeec612abe6d1a8f1961da3ad4582db4"
+    sha256 "8c5cdabab5cab40e4a2e82a6a89789d204211e647eda09f1b7f1ef52e60da7e9"
   end
 
   def install
